@@ -18,6 +18,7 @@ namespace Helper
             provider.GetNonZeroBytes(saltBytes);
 
             return Convert.ToBase64String(saltBytes);
+
         }
 
         public static string GenerateSHA256Hash(string input, string salt)
