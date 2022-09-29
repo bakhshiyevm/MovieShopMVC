@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Helper.MapperConfig
+namespace Services.MapperConfig
 {
     public class MapperProfile : Profile
     {

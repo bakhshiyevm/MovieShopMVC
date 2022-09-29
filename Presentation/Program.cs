@@ -1,6 +1,6 @@
 using AutoMapper;
 using DataAccess;
-using Helper.MapperConfig;
+using Services.MapperConfig;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Services.Abstract;

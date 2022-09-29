@@ -12,12 +12,16 @@ namespace DataAccess
     {
 
         DbSet<User> Users { get; set; }
+        DbSet<Role> Roles { get; set; }
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
 
         }
 
-
-    }
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+            InitialData.LoadInitialData(ref modelBuilder);
+		}
+	}
 }
